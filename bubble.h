@@ -18,16 +18,17 @@ void display(int value[], int N){
 
 
 void bubble(int a[], int N){
-    int i;
-    int j;
-    
-    for(j=0;j<N-1;j++){
-        if(a[j]>a[j+1]) // decending
-            swap(&a[j],&a[j+1]);
-        display(a,N);
-    }
-    
-    
+    int i,j,sorted;
+    for (i = N - 1; i > 0; i--){
+      for (j = 0; j < i; j++){
+       	if(a[j]>a[j+1]){ // decending
+        swap(&a[j],&a[j+1]);
+        sorted = 0;
+		  }
+      display(a,N);
+	  }
+    	if(sorted == 1) break; 
+  }    
 }
 
 #endif /* bubble_h */
