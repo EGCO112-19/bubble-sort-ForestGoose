@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include "bubble.h"
 #include "selection.h"
+#include "insertion.h"
 
 void main(int argc, char **argv){
   printf("There are %d arguments\n",argc-1);
@@ -16,4 +17,5 @@ void main(int argc, char **argv){
   */
   //bubble(a,N);
   //selection(a,N);
+  //insertion(a,N);
 }
