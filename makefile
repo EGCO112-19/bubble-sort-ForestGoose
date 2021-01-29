@@ -1,4 +1,4 @@
 argument: simpleMain.c 
-	gcc simpleMain.c -o App
+	gcc simpleMain.c -o sort
 
 
